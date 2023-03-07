@@ -14,7 +14,7 @@
     "dev:mp-weixin": "cross-env NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch",
     "info": "node node_modules/@dcloudio/vue-cli-plugin-uni/commands/info.js",
     "prepare": "husky install",
-    "commit": "git-cz",
+    "cz": "git add . && git cz",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "lint:lint-staged": "lint-staged",
     "prettier": "prettier --write ."
@@ -90,7 +90,8 @@
   },
   "config": {
     "commitizen": {
-      "path": "node_modules/cz-customizable"
+      "path": "node_modules/cz-customizable",
+      "precommit":"lint-staged"
     }
   }
 }
