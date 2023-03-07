@@ -14,7 +14,7 @@
     "dev:mp-weixin": "cross-env NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch",
     "info": "node node_modules/@dcloudio/vue-cli-plugin-uni/commands/info.js",
     "prepare": "husky install",
-    "cz": "git add . && git cz",
+    "commit": "git-cz",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "lint:lint-staged": "lint-staged",
     "prettier": "prettier --write ."
@@ -74,12 +74,6 @@
   },
   "uni-app": {
     "scripts": {}
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
-    }
   },
   "lint-staged": {
     "./src/**/*.{js,jsx,ts,tsx,vue}": [

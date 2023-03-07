@@ -45,7 +45,7 @@ uniapp 配置eslint+prettier+husky
     详细可参考配置
    
    4.5 执行命令
-   npx husky-init && npm install
+   npx husky-init && npx install
 
    npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 
@@ -62,14 +62,7 @@ uniapp 配置eslint+prettier+husky
         "commitizen": {
         "path": "node_modules/cz-customizable"
         }
-    }
-
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
-    }
-  },
+    },
   "lint-staged": {
     "./src/**/*.{js,jsx,ts,tsx,vue}": [
       "prettier --write",
