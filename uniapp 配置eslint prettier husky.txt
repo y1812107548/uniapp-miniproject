@@ -45,7 +45,7 @@ uniapp 配置eslint+prettier+husky
     详细可参考配置
    
    4.5 执行命令
-   npx husky-init && npx install
+   npx husky-init && npm install
 
    npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 
