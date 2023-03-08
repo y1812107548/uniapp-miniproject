@@ -8,8 +8,6 @@
     },
     onHide: function () {
       console.log('App Hide')
-
-      console.log('app             333333333')
     }
   }
 </script>
