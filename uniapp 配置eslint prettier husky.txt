@@ -45,7 +45,8 @@ uniapp 配置eslint+prettier+husky
     详细可参考配置
    
    4.5 执行命令
-   npx husky-init && npm install
+   npx husky-init && npm install // mac
+   npx husky-init ; npm install  // Windows安装 Husky
 
    npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 
@@ -72,6 +73,17 @@ uniapp 配置eslint+prettier+husky
   }
 
 4.7、 .editorconfig配置文件
+    # top-most EditorConfig file
+    root = true
+
+    [*.{js,jsx,ts,tsx,vue}]
+    indent_style = space
+    indent_size = 2
+    end_of_line = crlf
+    charset = utf-8
+    trim_trailing_whitespace = false
+    insert_final_newline = false
+    max_line_length = 100
 
     
    

@@ -1,5 +1,6 @@
-> 1%
-last 2 versions
-not dead
-Android >= 4.4
+chrome >= 30
+firefox >= 30
+ie >= 9
+safari >= 7
+android >= 4.4
 ios >= 9
