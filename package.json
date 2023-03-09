@@ -85,7 +85,7 @@
   "config": {
     "commitizen": {
       "path": "node_modules/cz-customizable",
-      "precommit":"lint-staged"
+      "precommit": "lint-staged"
     }
   }
 }

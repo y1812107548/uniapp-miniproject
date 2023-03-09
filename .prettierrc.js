@@ -12,7 +12,7 @@ module.exports = {
   // 在Vue文件中缩进脚本和样式标签。
   vueIndentScriptAndStyle: true,
   // 一行最多 100 字符
-  printWidth: 100,
+  printWidth: 150,
   // 对象的 key 仅在必要时用引号
   quoteProps: 'as-needed',
   // jsx 不使用单引号，而使用双引号
