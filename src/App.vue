@@ -8,6 +8,7 @@
     },
     onHide: function () {
       console.log('App Hide1')
+      console.log('App Hide1')
     }
   }
 </script>
